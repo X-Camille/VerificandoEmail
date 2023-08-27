@@ -10,7 +10,7 @@ verificarPatron()
 comprobarDominio() 
 
 Reglas: 
-- Un correo electrónico es válido si solo una arroba. 
+- Un correo electrónico es válido si solo tiene una arroba. 
 - Un correo electrónico debe tener como mínimo un punto. 
 - No debe empezar ni terminar con punto. 
 - Existencia de algún tipo de dominio. 
