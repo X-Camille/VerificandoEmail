@@ -24,6 +24,7 @@ public class Email {
         System.out.println("Ingrese su email: ");
         String email = teclado.nextLine();
         comprobarEmail(email);
+        System.out.println("test");
     }
 
     public static void main(String[] args) {
