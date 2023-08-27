@@ -9,11 +9,11 @@ public class Email {
         email = correo;
     }
 
-    public String getEmail(){
+    private String getEmail(){
         return email;
     }
 
-    public boolean tienePuntosExtremos(){  // Comprueba si hay puntos al principio o al final del email
+    private boolean tienePuntosExtremos(){  // Comprueba si hay puntos al principio o al final del email
         for(int i = 0; i < email.length(); i ++) {
             if (email.charAt(i) == '.' && (i == 0 || i == email.length()-1)) {
                return true;
@@ -21,7 +21,7 @@ public class Email {
         } return false;
     }
 
-    public boolean recorrerEmail(){ // Recorrer el email
+    private boolean recorrerEmail(){ // Recorrer el email
         int contadorPuntos = 0;
         int contadorArroba = 0;
         for(int i = 0; i < email.length(); i ++) {
@@ -42,7 +42,6 @@ public class Email {
             System.out.println("El email es inválido");
         }
     }
-
 
     public void main(String[] args) {
         comprobarEmail();
